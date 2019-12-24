@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:mysql://47.104.186.7:3306/hot_shop?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: cmr
