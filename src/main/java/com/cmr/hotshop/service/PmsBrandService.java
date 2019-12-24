@@ -25,4 +25,24 @@ public interface PmsBrandService {
      */
     int createBrand(PmsBrand pmsBrand);
 
+    /**
+     * 更新
+     * @param pmsBrand
+     * @return
+     */
+    int updateBrand(PmsBrand pmsBrand);
+
+    /**
+     * 删除
+     * @param id
+     * @return
+     */
+    int deleteBrand(Long id);
+
+    /**
+     * 查询单个详情
+     * @param id
+     * @return
+     */
+    PmsBrand getBrand(Long id);
 }

@@ -22,6 +22,7 @@
         <mybatis.version>2.1.1</mybatis.version>
         <mybatis.generator.configurationFile>src/main/resources/mybatis/generatorConfig.xml</mybatis.generator.configurationFile>
         <mybatis.generator.overwrite>true</mybatis.generator.overwrite>
+        <swagger.version>2.7.0</swagger.version>
     </properties>
 
     <dependencies>
@@ -80,14 +81,21 @@
             <artifactId>mybatis-generator-core</artifactId>
             <version>${generator.version}</version>
         </dependency>
+        <!--Swagger-UI API文档生产工具-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
             <!--generator插件-->
             <plugin>
                 <groupId>org.mybatis.generator</groupId>

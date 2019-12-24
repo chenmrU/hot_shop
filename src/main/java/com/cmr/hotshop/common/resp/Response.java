@@ -29,6 +29,15 @@ public class Response<T> {
 
     /**
      * 成功返回结果
+     * @param <T>
+     * @return
+     */
+    public static <T> Response<T> success() {
+        return new Response<>(ResponseCode.SUCCESS.getCode(), ResponseCode.SUCCESS.getMessage(), null);
+    }
+
+    /**
+     * 成功返回结果
      * @param data
      * @param <T>
      * @return
