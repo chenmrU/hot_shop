@@ -4,7 +4,5 @@ spring:
       - datasource
       - actuator
       - mybatis
-  application:
-    name: hot_shop
 server:
   port: 8080
