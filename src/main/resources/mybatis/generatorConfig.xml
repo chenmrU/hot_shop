@@ -12,7 +12,7 @@
         <!-- 为模型生成序列化方法-->
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
         <!--覆盖xml-->
-        <!--<plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"/>-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"/>
         <!-- 为生成的Java模型创建一个toString方法 -->
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
         <!--可以自定义生成model的代码注释-->

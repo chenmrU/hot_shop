@@ -18,7 +18,7 @@
         <java.version>1.8</java.version>
         <pagehelper.version>1.2.10</pagehelper.version>
         <druid.version>1.1.10</druid.version>
-        <generator.version>1.3.3</generator.version>
+        <generator.version>1.3.7</generator.version>
         <mybatis.version>2.1.1</mybatis.version>
         <mybatis.generator.configurationFile>src/main/resources/mybatis/generatorConfig.xml</mybatis.generator.configurationFile>
         <mybatis.generator.overwrite>true</mybatis.generator.overwrite>
