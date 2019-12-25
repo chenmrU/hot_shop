@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface PmsSkuStockMapper {
-    long countByExample(PmsSkuStockExample example);
+    int countByExample(PmsSkuStockExample example);
 
     int deleteByExample(PmsSkuStockExample example);
 

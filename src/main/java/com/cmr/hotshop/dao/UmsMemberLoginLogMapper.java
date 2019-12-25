@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface UmsMemberLoginLogMapper {
-    long countByExample(UmsMemberLoginLogExample example);
+    int countByExample(UmsMemberLoginLogExample example);
 
     int deleteByExample(UmsMemberLoginLogExample example);
 

@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface SmsHomeBrandMapper {
-    long countByExample(SmsHomeBrandExample example);
+    int countByExample(SmsHomeBrandExample example);
 
     int deleteByExample(SmsHomeBrandExample example);
 

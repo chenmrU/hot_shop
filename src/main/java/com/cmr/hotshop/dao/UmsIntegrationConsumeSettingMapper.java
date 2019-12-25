@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface UmsIntegrationConsumeSettingMapper {
-    long countByExample(UmsIntegrationConsumeSettingExample example);
+    int countByExample(UmsIntegrationConsumeSettingExample example);
 
     int deleteByExample(UmsIntegrationConsumeSettingExample example);
 

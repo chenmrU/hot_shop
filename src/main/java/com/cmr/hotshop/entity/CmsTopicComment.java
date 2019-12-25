@@ -1,5 +1,6 @@
 package com.cmr.hotshop.entity;
 
+import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 import java.util.Date;
 

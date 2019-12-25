@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface PmsFeightTemplateMapper {
-    long countByExample(PmsFeightTemplateExample example);
+    int countByExample(PmsFeightTemplateExample example);
 
     int deleteByExample(PmsFeightTemplateExample example);
 

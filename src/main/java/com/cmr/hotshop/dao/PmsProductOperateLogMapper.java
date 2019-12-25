@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface PmsProductOperateLogMapper {
-    long countByExample(PmsProductOperateLogExample example);
+    int countByExample(PmsProductOperateLogExample example);
 
     int deleteByExample(PmsProductOperateLogExample example);
 

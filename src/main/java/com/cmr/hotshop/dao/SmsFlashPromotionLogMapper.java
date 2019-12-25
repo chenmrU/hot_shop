@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface SmsFlashPromotionLogMapper {
-    long countByExample(SmsFlashPromotionLogExample example);
+    int countByExample(SmsFlashPromotionLogExample example);
 
     int deleteByExample(SmsFlashPromotionLogExample example);
 
