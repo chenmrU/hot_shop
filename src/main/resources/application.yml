@@ -4,5 +4,6 @@ spring:
       - datasource
       - actuator
       - mybatis
+      - redis
 server:
   port: 8080
