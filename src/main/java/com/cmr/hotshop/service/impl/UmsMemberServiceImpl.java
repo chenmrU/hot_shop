@@ -16,10 +16,10 @@ public class UmsMemberServiceImpl implements UmsMemberService {
     private RedisService redisService;
 
     @Value("${spring.redis.key.prefix.authCode}")
-    private String REDIS_KEY_PREFIX_AUTH_CODE;
+    private static String REDIS_KEY_PREFIX_AUTH_CODE;
 
     @Value("${spring.redis.key.expire}")
-    private Long AUTH_CODE_EXPIRE_SECONDS;
+    private static Long AUTH_CODE_EXPIRE_SECONDS;
 
     @Override
     public String generateAuthCode(String telephone) {
