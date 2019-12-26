@@ -23,6 +23,8 @@
         <mybatis.generator.configurationFile>src/main/resources/mybatis/generatorConfig.xml</mybatis.generator.configurationFile>
         <mybatis.generator.overwrite>true</mybatis.generator.overwrite>
         <swagger.version>2.7.0</swagger.version>
+        <jwt.version>0.9.0</jwt.version>
+        <hutool.version>4.5.7</hutool.version>
     </properties>
 
     <dependencies>
@@ -96,6 +98,23 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!--SpringSecurity依赖配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!--JWT-->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${jwt.version}</version>
+        </dependency>
+        <!--Hutool Java工具包-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
         </dependency>
     </dependencies>
 
