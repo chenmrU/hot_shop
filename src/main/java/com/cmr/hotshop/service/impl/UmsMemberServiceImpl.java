@@ -14,9 +14,9 @@ public class UmsMemberServiceImpl implements UmsMemberService {
 
     @Resource
     private RedisService redisService;
-    @Value("${redis.key.prefix.authCode}")
+    @Value("${spring.redis.key.prefix.authCode}")
     private String REDIS_KEY_PREFIX_AUTH_CODE;
-    @Value("${redis.key.expire.authCode}")
+    @Value("${spring.redis.key.expire}")
     private Long AUTH_CODE_EXPIRE_SECONDS;
 
     @Override
