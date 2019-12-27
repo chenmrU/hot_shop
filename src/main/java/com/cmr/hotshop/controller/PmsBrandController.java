@@ -8,6 +8,7 @@ import com.cmr.hotshop.service.PmsBrandService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -28,6 +29,7 @@ public class PmsBrandController {
 
     @ApiOperation("获取所有品牌列表")
     @PostMapping("listAll")
+    @PreAuthorize("hasAuthority('pms:brand:read')")
     public ResponsePage<PmsBrand> getBrandList(@RequestBody RequestPage requestPage) {
         return ResponsePage.restPage(pmsBrandService.listAllBrand(requestPage));
     }
