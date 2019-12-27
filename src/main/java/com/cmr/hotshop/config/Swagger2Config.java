@@ -19,6 +19,7 @@ import java.util.List;
 
 /**
  * Swagger2API文档的配置
+ * @author chenmr
  */
 @Configuration
 @EnableSwagger2
@@ -44,7 +45,6 @@ public class Swagger2Config {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("hot-shop")
-                .description("hot-shop接口")
                 .contact("cmr")
                 .version("1.0")
                 .build();
