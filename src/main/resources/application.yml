@@ -5,6 +5,7 @@ spring:
       - actuator
       - mybatis
       - redis
+      - elasticsearch
 server:
   port: 8080
 
