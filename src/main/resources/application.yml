@@ -6,6 +6,7 @@ spring:
       - mybatis
       - redis
       - elasticsearch
+      - mongo
 server:
   port: 8080
 
