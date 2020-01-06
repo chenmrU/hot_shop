@@ -68,6 +68,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/v2/api-docs/**",
                         "/actuator")
                 .permitAll()
+                .antMatchers("/**")
+                .permitAll()
                 .antMatchers(HttpMethod.POST,"/admin/login", "/admin/register")
                 .permitAll()
                 .antMatchers(HttpMethod.OPTIONS)
@@ -104,7 +106,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    public JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter(){
+    public JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter() {
         return new JwtAuthenticationTokenFilter();
     }
 

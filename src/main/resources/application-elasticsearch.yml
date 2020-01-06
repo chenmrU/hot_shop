@@ -1,4 +1,4 @@
 spring:
   elasticsearch:
     rest:
-      uris: http://192.168.1.112:9200
+      uris: http://hot_shop:9200
