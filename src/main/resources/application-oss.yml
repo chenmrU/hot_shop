@@ -1,0 +1,12 @@
+aliyun:
+  oss:
+    endpoint: hot-shop.oss-cn-shenzhen.aliyuncs.com # oss对外服务的访问域名
+    accessKeyId: LTAI4FiKAidanetTkoHenBzm # 访问身份验证中用到用户标识
+    accessKeySecret: zk6s3fGmiR3kj0ZTRxTz3Y4IkWQfq2 # 用户用于加密签名字符串和oss用来验证签名字符串的密钥
+    bucketName: hot-shop # oss的存储空间
+    policy:
+      expire: 300 # 签名有效期(S)
+    maxSize: 10 # 上传文件大小(M)
+    callback: http://localhost:8080/aliyun/oss/callback # 文件上传成功后的回调地址
+    dir:
+      prefix: hot_shop/images/ # 上传文件夹路径前缀
