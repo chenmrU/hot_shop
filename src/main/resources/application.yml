@@ -7,6 +7,7 @@ spring:
       - redis
       - elasticsearch
       - mongo
+      - rabbitmq
 server:
   port: 8080
 

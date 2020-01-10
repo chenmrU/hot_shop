@@ -1,0 +1,8 @@
+spring:
+  rabbitmq:
+    host: hot_shop
+    port: 5672
+    virtual-host: hot_shop_host
+    username: root
+    password: root
+    publisher-returns: true
